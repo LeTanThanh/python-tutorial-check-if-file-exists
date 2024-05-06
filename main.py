@@ -8,3 +8,10 @@ if __name__ == "__main__":
   from os.path import exists as file_exist
 
   print(file_exist("readme.txt"))
+
+  # Using the pathlib module to check if a file exists
+
+  from pathlib import Path
+
+  path = Path("readme.txt")
+  print(path.is_file())
